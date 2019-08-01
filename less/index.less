@@ -57,8 +57,59 @@ table {
 }
 @background-color: lightgray;
 
+@font: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@border: 1px solid slategray;
+
+.padding {
+	padding: 10px 10px 10px 10px;
+	}
+
+.flex(@justify) {
+	display: flex;
+	justify-content: @justify;
+}
 
 html, body {
     height: 100%;
 		background: @background-color;
+		font-family: @font;
+		font-size: 62.5%;
+}
+nav {
+	.flex(space-around);
+	flex-direction: column;
+	position: fixed;
+
+ 	a {
+		 text-decoration: none;
+		 color: blue;
+		 font-size: 2.0rem;
+		 padding: 5% 5% 5% 10%;
+	 }
+}
+div {
+	.flex(space-between);
+	flex-direction: column;
+	align-items: center;
+
+	section {
+			width: 65%;
+			margin: 30px 0px 30px 0px;
+			.padding;
+			border-top:@border;
+			border-left: @border;
+			h1 {
+				font-size: 2.0rem;
+				.padding;
+			}
+			p {
+				font-size: 1.5rem;
+				.padding;
+			}
+			h3 {
+				font-size: 1.8rem;
+				.padding;
+			}
+	}
 }
