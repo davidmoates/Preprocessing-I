@@ -167,6 +167,10 @@ nav a {
     color: lightgray;
   }
 }
+nav img {
+  width: 25rem;
+  height: auto;
+}
 div {
   display: flex;
   justify-content: space-between;
