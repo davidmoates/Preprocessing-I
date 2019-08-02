@@ -171,6 +171,14 @@ nav img {
   width: 25rem;
   height: auto;
 }
+@media (max-width: 800px) {
+  nav img {
+    display: none;
+  }
+}
+a:hover {
+  color: darkslategray;
+}
 div {
   display: flex;
   justify-content: space-between;

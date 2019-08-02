@@ -97,10 +97,16 @@ nav {
 			 padding: 0px;
 			 color: @background-color;
 		 }
+	a:hover {
+		color: darken(50%);
+	}
 	 }
 	 img {
 		 width: 25rem;
 		 height: auto;
+		 @media(max-width: 800px) {
+			 display: none;
+		 }
 	 }
 }
 div {
